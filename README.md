@@ -61,7 +61,7 @@ When Drive sees a `text/markdown` upload with a target mimeType of `application/
 If you have [`uv`](https://github.com/astral-sh/uv) installed, the script is fully self-contained — `uv` reads its [PEP 723](https://peps.python.org/pep-0723/) inline dependency metadata and handles everything.
 
 ```bash
-curl -O https://raw.githubusercontent.com/YOUR_USER/md2gdoc/main/md2gdoc.py
+curl -O https://raw.githubusercontent.com/benstein/md2gdoc/main/md2gdoc.py
 chmod +x md2gdoc.py
 sudo mv md2gdoc.py /usr/local/bin/md2gdoc
 ```
@@ -73,7 +73,7 @@ First run will be slightly slower while `uv` builds the ephemeral env; subsequen
 Clones the repo, creates a dedicated venv at `~/.local/share/md2gdoc/venv`, installs deps, and symlinks the script to `/usr/local/bin/md2gdoc`.
 
 ```bash
-git clone https://github.com/YOUR_USER/md2gdoc.git
+git clone https://github.com/benstein/md2gdoc.git
 cd md2gdoc
 ./install.sh
 ```

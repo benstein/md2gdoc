@@ -53,7 +53,7 @@ One-time setup (5 minutes):
 The same client_secrets.json works for ALL accounts you sign in with — the
 account is chosen at sign-in time, not at credential-creation time.
 
-Full walkthrough: https://github.com/bensteinhq/md2gdoc#one-time-google-cloud-setup
+Full walkthrough: https://github.com/benstein/md2gdoc#one-time-google-cloud-setup
 """
 
 
