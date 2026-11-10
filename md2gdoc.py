@@ -158,6 +158,8 @@ def main() -> None:
     args = parser.parse_args()
 
     src = Path(args.file).expanduser().resolve()
+    if src.is_dir():
+        sys.exit(f"Not a file (is a directory): {src}")
     if not src.is_file():
         sys.exit(f"File not found: {src}")
     if src.suffix.lower() not in (".md", ".markdown", ".txt"):
